@@ -1,0 +1,5 @@
+"sample"	"cell"	"condition"	"dose"	"time"	"fastq_url"
+"SRR5458657"	"HEK293"	"BSA"	0	4	"ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR545/007/SRR5458657/SRR5458657.fastq.gz"
+"SRR5458658"	"HEK293"	"BSA"	0	4	"ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR545/008/SRR5458658/SRR5458658.fastq.gz"
+"SRR5458661"	"HEK293"	"INFy"	50	4	"ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR545/001/SRR5458661/SRR5458661.fastq.gz"
+"SRR5458662"	"HEK293"	"INFy"	50	4	"ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR545/002/SRR5458662/SRR5458662.fastq.gz"

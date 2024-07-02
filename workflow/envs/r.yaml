@@ -1,0 +1,24 @@
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+
+dependencies:
+  - r-base=4.3
+  - r-essentials=4.3
+  - bioconductor-deseq2=1.42.0
+  - bioconductor-apeglm=1.24.0
+  - bioconductor-regionreport=1.36.0
+  - r-pheatmap=1.0.12
+  - bioconductor-deseq2=1.42.0
+  - bioconductor-tximport=1.30.0
+  - bioconductor-ensdb.hsapiens.v86=2.99.0
+  - bioconductor-ensembldb=2.26.0
+  - bioconductor-rhdf5=2.46.1
+  - r-readr=2.1.5
+  - bioconductor-apeglm=1.24.0
+  - bioconductor-enhancedvolcano=1.20.0
+  - r-dt=0.33
+  - r-sessioninfo=1.2.2
+  - bioconductor-clusterprofiler=4.10.0
+  - bioconductor-org.hs.eg.db=3.18.0

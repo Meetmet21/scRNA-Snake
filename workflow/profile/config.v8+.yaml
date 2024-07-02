@@ -1,0 +1,39 @@
+# Snakemake default parameters for local machine running
+
+# Use conda envs for rules executions
+use-conda: true
+
+# Increase verbose for error handling
+printshellcmds: true
+
+# Don't restart failed rules
+restart-times: 0
+
+# Number of cores
+cores: 8
+
+# Number of jobs in parallel
+jobs: 2
+
+# Submit one 
+max-jobs-per-second: 1
+
+# Default resources
+resources:
+    mem_mb: 8000
+    disk_mb: 50000
+
+# Run independent rules after fail
+keep-going: true
+
+# Rerun jobs for incomplete outputs
+rerun-incomplete: true
+
+# Rerun rules based on last modification date
+rerun-triggers: mtime
+
+# Wait after job end for output (seconds)
+latency-wait: 60
+
+# Set mamba as fronted for dependencies resolution
+conda-frontend: mamba

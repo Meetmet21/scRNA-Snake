@@ -1,0 +1,7 @@
+channels:
+  - conda-forge
+  - bioconda
+  - r
+dependencies:
+  - openjdk=22.0.1
+  - multiqc=1.22.3

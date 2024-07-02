@@ -1,0 +1,31 @@
+# MODULES
+from os.path import dirname, basename
+from re import sub
+
+import pandas as pd
+
+# MIN SNAKEMAKE
+from snakemake.utils import min_version
+
+min_version("8.14")
+
+# Config file
+configfile: "config/config.yaml"
+# Sample sheet
+samples = pd.read_csv(filepath_or_buffer=config["samples"], sep="\t", )
+
+# Include common input functions
+include: "rules/common.smk"
+
+# Target rule
+rule all:
+    input:
+        "workflow/report/multiqc/multiqc_report.html",
+        "results/clusterProfiler/TopGO.tsv"
+    default_target: True
+
+# module rules
+include: "rules/data_acquisition.smk"
+include: "rules/QC.smk"
+include: "rules/pseudo_mapping.smk"
+include: "rules/differential_expression_analysis.smk"

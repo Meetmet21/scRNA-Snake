@@ -1,0 +1,7 @@
+channels:
+  - conda-forge
+  - bioconda
+  - r
+dependencies:
+  - openjdk=22.0.1
+  - fastqc=0.12.1
